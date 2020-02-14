@@ -12,6 +12,7 @@ class HeroInline(admin.StackedInline):
 
 class HeroAdmin(ModelAdmin):
     list_display = ('name', 'gender', 'content', 'book')
+    search_fields = ('gender',)
 
 
 class BookAdmin(ModelAdmin):
